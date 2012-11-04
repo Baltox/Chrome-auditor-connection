@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app ng-csp>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="angular.min.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+	<div ng-controller="listConnection">
+		<ul ng-repeat="connection in connections">
+			<li>{{ connection | date:'dd/MM/yyyy HH:mm:ss'}}</li>
+		</ul>
+	</div>
+</body>
+</html>
