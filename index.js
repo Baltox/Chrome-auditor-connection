@@ -1,9 +1,8 @@
-function listConnection( $scope) {
-	$scope.connections = JSON.parse(localStorage['connectionHistory']);
-	//console.log( 'ok');
 
-//	$scope.connections = [
-//	                'learn angular',
-//	                'build an angular app'];
-	
-}
+oConnections = JSON.parse(localStorage['connectionHistory']);
+
+oConnections.forEach(function(y) {
+						oTable = $( '#table tbody');
+						oTable.html( oTable.html() + "<tr>" + y.date + "</tr>");
+						
+					}); 
