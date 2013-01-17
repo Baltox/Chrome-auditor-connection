@@ -3,7 +3,7 @@
   "version": "1",
   "icons": { "48": "icone.png",
             "128": "icone.png" },
-  "description": "Uses OAuth to connect to Google's contacts service and display a list of your contacts.",
+  "description": "Chrome-auditor-connection is an extension for Google Chrome browser. It ensures that nobody connects to your browser with your profile.",
   "background": {
     "scripts": [
       "chrome_ex_oauthsimple.js",
@@ -17,10 +17,7 @@
     "default_popup": "index.html"
   },
   "permissions": [
-	"storage",
-    "https://www.google.com/accounts/OAuthGetRequestToken",
-    "https://www.google.com/accounts/OAuthAuthorizeToken",
-    "https://www.google.com/accounts/OAuthGetAccessToken"
+	"storage"
   ],
   "web_accessible_resources": ["index.html"],
   "sandbox": {
