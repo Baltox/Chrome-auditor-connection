@@ -16,12 +16,6 @@
     "default_icon": "icone.png",
     "default_popup": "index.html"
   },
-  "permissions": [
-	"storage"
-  ],
   "web_accessible_resources": ["index.html"],
-  "sandbox": {
-     "pages": ["index.html","index.js","angular.min.js"]
-  },
   "manifest_version": 2
 }
