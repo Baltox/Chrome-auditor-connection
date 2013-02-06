@@ -1,0 +1,21 @@
+{
+  "name": "Auditor connection",
+  "version": "1",
+  "icons": { "48": "icone.png",
+            "128": "icone.png" },
+  "description": "Auditor-connection ensures that nobody connects to your browser with your profile.",
+  "background": {
+    "scripts": [
+      "chrome_ex_oauthsimple.js",
+      "chrome_ex_oauth.js",
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Chrome auditor connection",
+    "default_icon": "icone.png",
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": ["index.html"],
+  "manifest_version": 2
+}
